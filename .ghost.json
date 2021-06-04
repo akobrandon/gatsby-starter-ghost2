@@ -1,0 +1,10 @@
+{
+  "development": {
+    "apiUrl": "https://test-187.ghost.io",
+    "contentApiKey": "94b0f2931d8c1065495627ad62"
+  },
+  "production": {
+    "apiUrl": "https://test-187.ghost.io",
+    "contentApiKey": "94b0f2931d8c1065495627ad62"
+  }
+}
