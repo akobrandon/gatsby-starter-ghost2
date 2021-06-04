@@ -113,7 +113,7 @@ module.exports = {
                 ],
             },
         },
-        {
+        /*{
             resolve: `gatsby-plugin-advanced-sitemap`,
             options: {
                 query: `
@@ -182,7 +182,7 @@ module.exports = {
                 createLinkInHead: true,
                 addUncaughtPages: true,
             },
-        },
+        },*/
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
