@@ -1,0 +1,1128 @@
+{
+  "links": [
+    {
+      "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+      "method": "GET",
+      "rel": "business-units"
+    }
+  ],
+  "reviews": [
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5ff4e350755dc1032c0d0c97",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5ff4e350755dc1032c0d0c97/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5ff4e350755dc1032c0d0c97",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5ff4e34ab339a9001b80f843",
+            "method": "GET",
+            "rel": "consumers"
+          }
+        ],
+        "id": "5ff4e34ab339a9001b80f843",
+        "displayName": "Michael Cochran",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "Excellent team!",
+      "text": "The team is always on top on it and helping guide me through the entire process. Because of them, I am able to invest more into crypto knowing that they will handle the process effectively for getting more out of taxes.",
+      "language": "en",
+      "createdAt": "2021-01-05T22:08:16Z",
+      "experiencedAt": null,
+      "updatedAt": null,
+      "companyReply": {
+        "text": "That's exactly what we love to hear, Michael! The fun of crypto investing shouldn't be ruined by the complexity of reporting your crypto taxes.\nThank you for sharing this with us, Michael. We're here if you ever need anything more!",
+        "createdAt": "2021-01-08T18:08:52Z",
+        "updatedAt": null
+      },
+      "isVerified": false,
+      "source": "BasicLink",
+      "numberOfLikes": 0,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": null,
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": "invited"
+    },
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5fbbdade5e693f0b10feb2ea",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5fbbdade5e693f0b10feb2ea/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5fbbdade5e693f0b10feb2ea",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5fbbdad45210a5001c691843",
+            "method": "GET",
+            "rel": "consumers"
+          }
+        ],
+        "id": "5fbbdad45210a5001c691843",
+        "displayName": "Robert Bender",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "TaxBit Software and People Are Great!",
+      "text": "I want to thank the folks at TaxBit for great software and great service.  I received an IRS notice for past year's taxes due to my trading with 7+ exchanges.  The software quickly corrected my reporting and produced the correct IRS tax forms for my CPA.  Still requiring several significant .csv imports I started the chat service provided on their site and their folks took on the challenge to correct the files into a proper import format.  Quickly and painlessly I will be able to report corrections for my 2016-2019 taxes.  Thank you TaxBit.",
+      "language": "en",
+      "createdAt": "2020-11-23T15:53:02Z",
+      "experiencedAt": null,
+      "updatedAt": "2020-11-23T16:01:59Z",
+      "companyReply": {
+        "text": "Hey Robert,\n\nThank you SO much for this glowing review! Your experience is precisely what we aim to deliver every day, and I'm thrilled to hear that it's what you've received so far.\n\nWe love helping our users relieve the stress that can come with trying to work through anything and everything crypto tax related. Once we get all of your data uploaded, make sure to check out the Tax Optimizer which can help you take advantage of any unrealized gain/loss positions and make use of TaxBit every single day!\n\n Please do let us know if there's ever anything more that we can do for you, Robert!",
+        "createdAt": "2020-11-23T17:58:38Z",
+        "updatedAt": null
+      },
+      "isVerified": false,
+      "source": "Organic",
+      "numberOfLikes": 2,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": null,
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": "not-verified"
+    },
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5fb54e9b5e693f0accec65e6",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5fb54e9b5e693f0accec65e6/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5fb54e9b5e693f0accec65e6",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5fb54e9232ab1a0019dee59a",
+            "method": "GET",
+            "rel": "consumers"
+          },
+          {
+            "href": "https://user-images.trustpilot.com/5fb54e9232ab1a0019dee59a/73x73.png",
+            "method": "GET",
+            "rel": "profile-image"
+          }
+        ],
+        "id": "5fb54e9232ab1a0019dee59a",
+        "displayName": "Jon McBee",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "I had an unexpected tax issue pop up…",
+      "text": "I had an unexpected tax issue pop up due to new IRS regulations and felt helpless to address the issue given my accountants lack of familiarity with the topic.  I found out about TaxBit and created an account and within a day I had chatted with a member of their support team who understood my problem and knew how to help me resolve it.  I will maintain my membership with TaxBit as they have earned my trust.",
+      "language": "en",
+      "createdAt": "2020-11-18T16:40:59Z",
+      "experiencedAt": null,
+      "updatedAt": null,
+      "companyReply": {
+        "text": "We're happy that you found us, Jon! Thank you so much for taking the time to leave this review. I hope we were able to fully resolve the need that the IRS had, but we're here to help you out if you need anything more :).",
+        "createdAt": "2020-11-24T19:41:03Z",
+        "updatedAt": null
+      },
+      "isVerified": false,
+      "source": "Organic",
+      "numberOfLikes": 0,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": null,
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": "not-verified"
+    },
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f6b5bc8798e6f09601e3d19",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f6b5bc8798e6f09601e3d19/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5f6b5bc8798e6f09601e3d19",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5f6b5bc7f76a41649d0a2848",
+            "method": "GET",
+            "rel": "consumers"
+          }
+        ],
+        "id": "5f6b5bc7f76a41649d0a2848",
+        "displayName": "sgrnspce",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "Extremely easy to use",
+      "text": "Extremely easy to use - from initial signup to exchange linkage to tax document creation, the process could not have been easier or more user friendly.  Highly recommend to anyone buying or selling cryptocurrencies on any platform.",
+      "language": "en",
+      "createdAt": "2020-09-23T14:29:28Z",
+      "experiencedAt": null,
+      "updatedAt": null,
+      "companyReply": {
+        "text": "Thanks you much for this review! We're thrilled to receive feedback like this. Please let us know if you do ever need anything else!",
+        "createdAt": "2020-10-16T19:00:28Z",
+        "updatedAt": null
+      },
+      "isVerified": true,
+      "source": "FileUploadInvitation",
+      "numberOfLikes": 0,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": {
+        "businessUnitId": "5e5d8f30d4941700016227e1"
+      },
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": null
+    },
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f5faa5a02e8570a487206c4",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f5faa5a02e8570a487206c4/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5f5faa5a02e8570a487206c4",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5f5faa594c38615b01aee5c5",
+            "method": "GET",
+            "rel": "consumers"
+          }
+        ],
+        "id": "5f5faa594c38615b01aee5c5",
+        "displayName": "gxjuarez",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "Your service is a lifesaver",
+      "text": "Your service is a lifesaver.  I was able to amend my 2017 and 2018 tax returns to show my crypto earnings with ease.  Thank you.",
+      "language": "en",
+      "createdAt": "2020-09-14T17:37:30Z",
+      "experiencedAt": null,
+      "updatedAt": null,
+      "companyReply": {
+        "text": "Thank you so much for the review, gxjuarez! Glad we were able to help you get those amendments out of the way :).",
+        "createdAt": "2020-09-23T17:53:24Z",
+        "updatedAt": null
+      },
+      "isVerified": true,
+      "source": "FileUploadInvitation",
+      "numberOfLikes": 0,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": {
+        "businessUnitId": "5e5d8f30d4941700016227e1"
+      },
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": null
+    },
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f5e2a0902e8570a487126ee",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f5e2a0902e8570a487126ee/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5f5e2a0902e8570a487126ee",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5f5e2a09ec01bb37020d7149",
+            "method": "GET",
+            "rel": "consumers"
+          }
+        ],
+        "id": "5f5e2a09ec01bb37020d7149",
+        "displayName": "Bill",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "TaxBit saved me countless hours and…",
+      "text": "TaxBit saved me countless hours and gave me peace of mind.\nI wish I used it the previous year to claim my losses.",
+      "language": "en",
+      "createdAt": "2020-09-13T14:17:45Z",
+      "experiencedAt": null,
+      "updatedAt": null,
+      "companyReply": {
+        "text": "Thank you for this, Bill! We're happy to have you onboard, and we're here if you ever need any help with your account :).",
+        "createdAt": "2020-09-14T14:49:35Z",
+        "updatedAt": null
+      },
+      "isVerified": true,
+      "source": "FileUploadInvitation",
+      "numberOfLikes": 0,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": {
+        "businessUnitId": "5e5d8f30d4941700016227e1"
+      },
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": null
+    },
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f4ab72902e8570814fbcdb6",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f4ab72902e8570814fbcdb6/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5f4ab72902e8570814fbcdb6",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5f4ab72923898e015daaad9f",
+            "method": "GET",
+            "rel": "consumers"
+          }
+        ],
+        "id": "5f4ab72923898e015daaad9f",
+        "displayName": "Dennis McKenna",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "The Taxbit team does it all!",
+      "text": "The Taxbit team brought all my transactions on all crypto exchanges onto one report and then helped me choose the best method of tax reporting. They went far beyond what I could have hoped for!",
+      "language": "en",
+      "createdAt": "2020-08-29T20:14:33Z",
+      "experiencedAt": null,
+      "updatedAt": null,
+      "companyReply": {
+        "text": "Thank you, Dennis! You're incredibly kind, and we really appreciate this review :).\nPlease do let us know if we can ever do anything more for you!",
+        "createdAt": "2020-08-31T14:58:08Z",
+        "updatedAt": null
+      },
+      "isVerified": true,
+      "source": "FileUploadInvitation",
+      "numberOfLikes": 0,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": {
+        "businessUnitId": "5e5d8f30d4941700016227e1"
+      },
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": null
+    },
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f49654702e8570814fb4729",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f49654702e8570814fb4729/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5f49654702e8570814fb4729",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5f496547620c7578af6300aa",
+            "method": "GET",
+            "rel": "consumers"
+          }
+        ],
+        "id": "5f496547620c7578af6300aa",
+        "displayName": "Larry",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "I was blind as to how taxes would be…",
+      "text": "I was blind as to how taxes would be completed while investing in crypto currency, but your agency made it so much easier. I don't have to worry about how my taxes are filed now as an investor in crypto currency. Thank you for some peace of mind.",
+      "language": "en",
+      "createdAt": "2020-08-28T20:12:55Z",
+      "experiencedAt": null,
+      "updatedAt": null,
+      "companyReply": {
+        "text": "Hey Larry! Thank you so much for this kind review. We're very happy to hear that you've found peace of mind when it comes to your crypto taxes.\nCome check back with us when you get a chance, as we have and continue to develop tools to help you with more than just your crypto taxes! :)",
+        "createdAt": "2020-08-31T14:34:22Z",
+        "updatedAt": null
+      },
+      "isVerified": true,
+      "source": "FileUploadInvitation",
+      "numberOfLikes": 0,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": {
+        "businessUnitId": "5e5d8f30d4941700016227e1"
+      },
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": null
+    },
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f45ae1002e85708c8d8de0e",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f45ae1002e85708c8d8de0e/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5f45ae1002e85708c8d8de0e",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5f45ae0ff8773c29b3a71823",
+            "method": "GET",
+            "rel": "consumers"
+          }
+        ],
+        "id": "5f45ae0ff8773c29b3a71823",
+        "displayName": "Russell Hilbert",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "Great expert assistance!",
+      "text": "Great expert assistance with very difficult issues associated with my tax return. The service reps where patient and very helpful in getting my issues resolved in a timely manner. Much appreciated. Look forward to working with this group next year!",
+      "language": "en",
+      "createdAt": "2020-08-26T00:34:24Z",
+      "experiencedAt": null,
+      "updatedAt": null,
+      "companyReply": {
+        "text": "Russell! What a pleasure it was to work with you this spring :). Thank you very much for this kind review. Come back soon so we can show you what's new at TaxBit!",
+        "createdAt": "2020-08-26T19:10:12Z",
+        "updatedAt": null
+      },
+      "isVerified": true,
+      "source": "FileUploadInvitation",
+      "numberOfLikes": 0,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": {
+        "businessUnitId": "5e5d8f30d4941700016227e1"
+      },
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": null
+    },
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f45ab0d02e8570814f8fa13",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f45ab0d02e8570814f8fa13/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5f45ab0d02e8570814f8fa13",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5f45ab0d6e807376aa8096c3",
+            "method": "GET",
+            "rel": "consumers"
+          }
+        ],
+        "id": "5f45ab0d6e807376aa8096c3",
+        "displayName": "Gabriel Forest",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "Exceptional customer service and very adaptable in an evolving space",
+      "text": "These guys have more than earned their fees.  I buy lots of crazy coins from obscure/terrible exchanges with no API or CSV files, and they find a way to record all transactions, even if they have to manually enter them one by one.  They constantly adapt their tools to the rapidly changing landscape (most recent example:  Uniswap) , and they answer email very quickly, addressing any and every issue I might have, and asking great questions.  I very highly recommend them!",
+      "language": "en",
+      "createdAt": "2020-08-26T00:21:33Z",
+      "experiencedAt": null,
+      "updatedAt": null,
+      "companyReply": {
+        "text": "You're incredibly kind, Gabriel! Thank you for your patience while we worked through some complex scenarios with you this year :).  You've helped us come up with some additional ways that we can improve, and we can't thank you enough for that.\nLet us know if we can ever do anything more for you!",
+        "createdAt": "2020-08-26T19:08:14Z",
+        "updatedAt": null
+      },
+      "isVerified": true,
+      "source": "FileUploadInvitation",
+      "numberOfLikes": 0,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": {
+        "businessUnitId": "5e5d8f30d4941700016227e1"
+      },
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": null
+    },
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f4571d802e8570814f8e1ad",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f4571d802e8570814f8e1ad/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5f4571d802e8570814f8e1ad",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5f4571d75be2e1e5b66cd9eb",
+            "method": "GET",
+            "rel": "consumers"
+          }
+        ],
+        "id": "5f4571d75be2e1e5b66cd9eb",
+        "displayName": "Everett",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "My experience with TaxBit has been…",
+      "text": "My experience with TaxBit has been great. Your staff always got back to me in a very timely manner. They took the time to explain how the program works and were very helpful in troubleshooting problems. I am happy with my subscription and will likely upgrade my subscription. \nEverett B.",
+      "language": "en",
+      "createdAt": "2020-08-25T20:17:28Z",
+      "experiencedAt": null,
+      "updatedAt": null,
+      "companyReply": {
+        "text": "Hey Everett! We're so happy to hear that you had a great experience with us :). Thank you very much for this review, and please do know that we're always here to help if you ever need anything else!",
+        "createdAt": "2020-08-26T17:50:26Z",
+        "updatedAt": null
+      },
+      "isVerified": true,
+      "source": "FileUploadInvitation",
+      "numberOfLikes": 0,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": {
+        "businessUnitId": "5e5d8f30d4941700016227e1"
+      },
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": null
+    },
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f3c196202e8570814f3bf92",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f3c196202e8570814f3bf92/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5f3c196202e8570814f3bf92",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5f3c1962401c32a55172d143",
+            "method": "GET",
+            "rel": "consumers"
+          }
+        ],
+        "id": "5f3c1962401c32a55172d143",
+        "displayName": "Eric Hillemeir",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "great service",
+      "text": "Always great to speak with your staff. Everyone is friendly and helpful and ensures client needa are met.",
+      "language": "en",
+      "createdAt": "2020-08-18T18:09:38Z",
+      "experiencedAt": null,
+      "updatedAt": null,
+      "companyReply": {
+        "text": "We've loved working with you this spring, Eric! We're here to help you with anything more you might need :).",
+        "createdAt": "2020-08-19T16:23:02Z",
+        "updatedAt": null
+      },
+      "isVerified": true,
+      "source": "FileUploadInvitation",
+      "numberOfLikes": 0,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": {
+        "businessUnitId": "5e5d8f30d4941700016227e1"
+      },
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": null
+    },
+    {
+      "links": [
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f3c116602e8570814f3b8f2",
+          "method": "GET",
+          "rel": "reviews"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/reviews/5f3c116602e8570814f3b8f2/web-links",
+          "method": "GET",
+          "rel": "reviews-web-links"
+        },
+        {
+          "href": "https://api.trustpilot.com/v1/resources/images/stars/5",
+          "method": "GET",
+          "rel": "resources-images-stars"
+        }
+      ],
+      "id": "5f3c116602e8570814f3b8f2",
+      "consumer": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/consumers/5f3c1166401c3283fe72cbee",
+            "method": "GET",
+            "rel": "consumers"
+          }
+        ],
+        "id": "5f3c1166401c3283fe72cbee",
+        "displayName": "Dwayne",
+        "displayLocation": null,
+        "numberOfReviews": 1
+      },
+      "businessUnit": {
+        "links": [
+          {
+            "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1",
+            "method": "GET",
+            "rel": "business-units"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/57x43.png",
+            "method": "GET",
+            "rel": "profile-image-small"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/118x89.png",
+            "method": "GET",
+            "rel": "profile-image-medium"
+          },
+          {
+            "href": "https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5e5d8f30d4941700016227e1/198x149.png",
+            "method": "GET",
+            "rel": "profile-image-large"
+          }
+        ],
+        "id": "5e5d8f30d4941700016227e1",
+        "identifyingName": "taxbit.com",
+        "displayName": "TaxBit"
+      },
+      "location": null,
+      "stars": 5,
+      "title": "Being a novice in this area",
+      "text": "Being a novice in this area, the TaxBit customer service people were great -- patient and very helpful.  Getting all my data uploaded into TaxBit was not as difficult as I had anticipated.  And the tax reports generated helped make doing my taxes much easier.  Highly recommended.",
+      "language": "en",
+      "createdAt": "2020-08-18T17:35:34Z",
+      "experiencedAt": null,
+      "updatedAt": null,
+      "companyReply": {
+        "text": "We're so happy that you had a good experience, Dwayne! Thank you very much for your kind, considerate comments.\nWe look forward to continuing to work with you for years to come!",
+        "createdAt": "2020-08-18T18:07:23Z",
+        "updatedAt": null
+      },
+      "isVerified": true,
+      "source": "FileUploadInvitation",
+      "numberOfLikes": 0,
+      "status": "active",
+      "reportData": null,
+      "complianceLabels": [],
+      "countsTowardsTrustScore": true,
+      "countsTowardsLocationTrustScore": null,
+      "invitation": {
+        "businessUnitId": "5e5d8f30d4941700016227e1"
+      },
+      "businessUnitHistory": [],
+      "reviewVerificationLevel": null
+    }
+  ]
+}

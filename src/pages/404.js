@@ -1,18 +1,31 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { Layout } from '../components/common'
+import React from "react"
+import { Link } from "gatsby"
+import {RiArrowLeftSLine, RiBugLine, RiSkullLine} from "react-icons/ri"
+import Hero from '../components/Hero'
+import SEO from "../components/seo"
+import Layout from "../components/layout"
 
-const NotFoundPage = () => (
-    <Layout>
-        <div className="container">
-            <article className="content" style={{ textAlign: `center` }}>
-                <h1 className="content-title">Error 404</h1>
-                <section className="content-body">
-                    Page not found, <Link to="/">return home</Link> to start over
-                </section>
-            </article>
-        </div>
-    </Layout>
+const NotFound = () => (
+  <Layout className="not-found-page">
+    <SEO title="Page not found"/>
+    <div className="wrapper" style={{
+      textAlign: "center"
+    }}>
+
+    <Hero>
+          <div className="row align-items-center">
+            <div className="col-12" data-aos="fade-up">
+              <h1>Oops we did not expect that to happen</h1>
+              <p className="lead text-center">
+                The page you're looking for can not be found.
+                </p>
+      
+            </div>
+          </div>
+        </Hero>
+      <Link to="/" className="button"><RiArrowLeftSLine className="icon -left"/>Back to Homepage</Link>
+    </div>
+  </Layout>
 )
 
-export default NotFoundPage
+export default NotFound

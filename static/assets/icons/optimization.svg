@@ -1,0 +1,17 @@
+<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="27.5" y="22.4996" width="3.74995" height="12.4998" rx="1.87498" fill="#03C3F8"/>
+<rect x="3.75" y="18.7498" width="3.74995" height="16.2498" rx="1.87498" fill="#03C3F8"/>
+<rect x="27.5" width="3.74995" height="18.7498" rx="1.87498" fill="#03C3F8"/>
+<rect x="3.75" width="3.74995" height="14.9998" rx="1.87498" fill="#03C3F8"/>
+<g style="mix-blend-mode:screen">
+<rect x="35" y="22.4996" width="3.74995" height="11.2499" rx="1.87498" transform="rotate(90 35 22.4996)" fill="#14CDB6"/>
+</g>
+<g style="mix-blend-mode:screen">
+<rect x="11.25" y="18.7498" width="3.74995" height="11.2499" rx="1.87498" transform="rotate(90 11.25 18.7498)" fill="#14CDB6"/>
+</g>
+<rect x="20" y="12.5" width="3.74995" height="12.4998" rx="1.87498" transform="rotate(-180 20 12.5)" fill="#03C3F8"/>
+<rect x="20" y="34.9995" width="3.74995" height="18.7498" rx="1.87498" transform="rotate(-180 20 34.9995)" fill="#03C3F8"/>
+<g style="mix-blend-mode:screen">
+<rect x="12.5" y="12.5" width="3.74995" height="11.2499" rx="1.87498" transform="rotate(-90 12.5 12.5)" fill="#14CDB6"/>
+</g>
+</svg>

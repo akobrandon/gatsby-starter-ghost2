@@ -1,12 +1,9 @@
-const path = require(`path`)
-const { postsPerPage } = require(`./src/utils/siteConfig`)
+const path = require("path")
+const { createFilePath } = require(`gatsby-source-filesystem`)
 const { paginate } = require(`gatsby-awesome-pagination`)
 
-/**
- * Here is the place where Gatsby creates the URLs for all the
- * posts, tags, pages and authors that we fetched from the Ghost site.
- */
-exports.createPages = async ({ graphql, actions }) => {
+
+exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
 
     const result = await graphql(`
@@ -59,12 +56,12 @@ exports.createPages = async ({ graphql, actions }) => {
     const posts = result.data.allGhostPost.edges
 
     // Load templates
-    const indexTemplate = path.resolve(`./src/templates/index.js`)
+    const indexTemplate = path.resolve(`./src/templates/blog-page.js`)
     const tagsTemplate = path.resolve(`./src/templates/tag.js`)
     const authorTemplate = path.resolve(`./src/templates/author.js`)
     const pageTemplate = path.resolve(`./src/templates/page.js`)
     const postTemplate = path.resolve(`./src/templates/post.js`)
-
+/*
     // Create tag pages
     tags.forEach(({ node }) => {
         const totalPosts = node.postCount !== null ? node.postCount : 0
@@ -127,12 +124,12 @@ exports.createPages = async ({ graphql, actions }) => {
             },
         })
     })
-
+*/
     // Create post pages
     posts.forEach(({ node }) => {
         // This part here defines, that our posts will use
         // a `/:slug/` permalink.
-        node.url = `/${node.slug}/`
+        node.url = `/blog2/${node.slug}/`
 
         createPage({
             path: node.url,
@@ -149,14 +146,97 @@ exports.createPages = async ({ graphql, actions }) => {
     paginate({
         createPage,
         items: posts,
-        itemsPerPage: postsPerPage,
+        itemsPerPage: 10,
         component: indexTemplate,
         pathPrefix: ({ pageNumber }) => {
-            if (pageNumber === 0) {
-                return `/`
-            } else {
-                return `/page`
-            }
+            return `/blog2`
         },
     })
+
+
+
+  
+  const blogList = path.resolve(`./src/templates/blog-list.js`)
+
+  var blogCount = 0;
+
+    return graphql(`
+    {
+      allMarkdownRemark(limit: 1000) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              tags
+              template
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      result.errors.forEach(e => console.error(e.toString()))
+      return Promise.reject(result.errors)
+    }
+
+    const posts = result.data.allMarkdownRemark.edges
+
+    posts.forEach(edge => {
+      if(edge.node.frontmatter.template == "blog-post"){
+        blogCount++
+      }
+      const id = edge.node.id
+      createPage({
+        path: edge.node.fields.slug,
+        tags: edge.node.frontmatter.tags,
+        component: path.resolve(
+          `src/templates/${String(edge.node.frontmatter.template)}.js`
+        ),
+        // additional data can be passed via context
+        context: {
+          id,
+        },
+      })
+    })
+
+    console.log(blogCount)
+
+    // Create blog-list pages
+    const postsPerPage = 9
+    const numPages = Math.ceil(blogCount / postsPerPage)
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+        component: blogList,
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
+        },
+      })
+    })
+
+
+  })
+}
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+  
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
+
+
 }

@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "TaxBit",
+    "titleTemplate": "%s",
+    "description": "TaxBit connects the consumer and enterprise cryptocurrency tax experiences. Whether you are a platform that needs to issue 1099s, or a user that needs to report their taxes, TaxBit’s cryptocurrency tax software unifies the process.",
+    "siteUrl": "https://taxbit.com",
+    "image": "/assets/TaxBit_Banner_Small.png",
+    "twitterUsername": "@taxbit"
+  },
+  "ga": "UA-118601838-1"
+}

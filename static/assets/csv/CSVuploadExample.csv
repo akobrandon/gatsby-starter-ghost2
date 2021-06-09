@@ -1,0 +1,8 @@
+Date and Time,Transaction Type,Sent Quantity,Sent Currency,Sending Source,Received Quantity,Received Currency,Receiving Destination,Exchange Transaction ID,Blockchain Transaction Hash
+6/7/2018 20:57,Buy,"5,500.00",USD,Bank,1.25,BTC,Coinbase,,
+6/7/2018 21:57,Transfer,1.25,BTC,Coinbase,1.25,BTC,Binance,,
+6/8/2018 22:58,Trade,1,BTC,Binance,10.08,ETH,Binance,,
+6/8/2018 23:58,Transfer,10.08,ETH,Binance,10.08,ETH,Hardware Wallet,,
+6/10/2018 11:58,Transfer,10.08,ETH,Hardware Wallet,10.08,ETH,Coinbase,,
+6/10/2018 12:58,Sale,10.08,ETH,Coinbase,"5,750.00",USD,Bank,,
+The data highlighted above is provided as an example only. Please remove all content and replace it with your data before uploading.,,,,,,,,,

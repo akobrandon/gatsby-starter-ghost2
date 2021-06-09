@@ -1,6 +1,108 @@
 [build]
-  command = "NODE_ENV=production gatsby build"
-  publish = "public/"
+  publish = "public"
+  command = "npm run build"
+  
+[build.environment]
+  NODE_VERSION = "10"
 
-[template]
-  incoming-hooks = ["Ghost"]
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
+  
+[[redirects]]
+  from = "/invite/user"
+  to = "https://app.taxbit.com/invite/user?fp_ref=:fp_ref"
+  status = 301
+  force = true
+  query = {fp_ref = ":fp_ref"}
+[[redirects]]
+  from = "/invite2/*"
+  to = "https://taxbit.com/invite/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/login"
+  to = "https://app.taxbit.com/login"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/signup"
+  to = "https://app.taxbit.com/signup"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/join"
+  to = "https://app.taxbit.com/signup"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ref"
+  to = "https://app.taxbit.com/invite/user?fp_ref=:fp_ref"
+  status = 301
+  force = true
+  query = {fp_ref = ":fp_ref"}
+[[redirects]]
+  from = "/2020-cryptocurrency-tax-guide"
+  to = "https://taxbit.com/cryptocurrency-tax-guide"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/accountant"
+  to = "https://accountant.taxbit.com"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://help.taxbit.com/hc/article_attachments/360066275413/mceclip4.png"
+  to = "https://help.taxbit.com/hc/en-us"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://help.taxbit.com/hc/article_attachments/360066275373/mceclip0.png"
+  to = "https://help.taxbit.com/hc/en-us"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://help.taxbit.com/hc/en-us/articles/360047438593"
+  to = "https://help.taxbit.com/hc/en-us"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://help.taxbit.com/hc/article_attachments/360065276454/mceclip2.png"
+  to = "https://help.taxbit.com/hc/en-us"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://help.taxbit.com/hc/article_attachments/360066275453/mceclip5.png"
+  to = "https://help.taxbit.com/hc/en-us"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://help.taxbit.com/hc/en-us/articles/support@taxbit.com"
+  to = "https://help.taxbit.com/hc/en-us"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://help.taxbit.com/hc/article_attachments/360066275393/mceclip1.png"
+  to = "https://help.taxbit.com/hc/en-us"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://taxbit.com/blog/2019-12-09-phantom-tax-consequences-on-receipt-of-digital-assets-by-airdrop/taxbit.com"
+  to = "https://taxbit.com/blog/2019-12-09-phantom-tax-consequences-on-receipt-of-digital-assets-by-airdrop/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://taxbit.com/blog/cryptocurrency-gifts-donations-tax-guide/taxbit.com"
+  to = "https://taxbit.com/blog/cryptocurrency-gifts-donations-tax-guide/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://taxbit.com/careers/back-end-senior-software-engineer"
+  to = "https://taxbit.com/careers/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://taxbit.com/careers/devops-engineer/"
+  to = "https://taxbit.com/careers/"
+  status = 301
+  force = true
+

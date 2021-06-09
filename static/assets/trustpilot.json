@@ -1,0 +1,50 @@
+{
+  "id": "5e5d8f30d4941700016227e1",
+  "country": "US",
+  "displayName": "TaxBit",
+  "name": {
+    "identifying": "taxbit.com",
+    "referring": [
+      "taxbit.com",
+      "www.taxbit.com"
+    ]
+  },
+  "score": {
+    "stars": 4.5,
+    "trustScore": 4.4
+  },
+  "status": "active",
+  "websiteUrl": "http://taxbit.com",
+  "numberOfReviews": {
+    "total": 184,
+    "usedForTrustScoreCalculation": 176,
+    "oneStar": 6,
+    "twoStars": 10,
+    "threeStars": 8,
+    "fourStars": 20,
+    "fiveStars": 140
+  },
+  "links": [
+    {
+      "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1/reviews",
+      "rel": "business-units-reviews",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1/web-links",
+      "rel": "business-units-web-links",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.trustpilot.com/v1/resources/strings/stars/4.5",
+      "rel": "resources-strings-stars",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.trustpilot.com/v1/resources/images/stars/4.5",
+      "rel": "resources-images-stars",
+      "method": "GET"
+    }
+  ],
+  "badFit": null
+}

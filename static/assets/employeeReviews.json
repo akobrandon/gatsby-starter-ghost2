@@ -1,0 +1,44 @@
+{
+  "reviews": [
+    {
+      "name": "Larry",
+      "role": "Principle Solutions Architect",
+      "text": "I chose TaxBit for the opportunity to build groundbreaking systems with cutting-edge cloud technologies. We're solving highly complex problems at scale with some of the most brilliant problem solvers in the industry."
+    },
+    {
+      "name": "Michelle",
+      "role": "VP Marketing",
+      "text": "Working at TaxBit is one of those life-changing opportunities you don't let pass you by. We're creating an entirely new category of business and helping bring cryptocurrency adoption mainstream. I've had the privilege of working closely with the TaxBit team for years, initially as wallet partner and their first customer and now leading their Marketing and Community efforts."
+    },
+    {
+      "name": "Felippe",
+      "role": "SME Manager",
+      "text": "TaxBit has incredible potential. The career path here has so many opportunities that will come with it. I wanted to help build a market-leading company and learn from the best in the business in the process. The culture of appreciation, encouragement, and transparency is terrific. We care about each other and ensure we're authentic in our day-to-day work. "
+    },
+    {
+      "name": "Brian",
+      "role": "Director, Security",
+      "text": "TaxBit has established itself as a category-leading institution in the FinTech space. Enterprise clients are joining TaxBit to solve the problem of cryptocurrency tax."
+    },
+    {
+      "name": "Seth",
+      "role": "Tax & Accounting SME Director",
+      "text": "I've worked in crypto for a few years. During my tenure, I've developed a vision of what tax compliance and regulation could look like in the near future. The technology TaxBit has developed is innovative and solving big problems. What once impossible is now possible, all because of TaxBit"
+    },
+    {
+      "name": "Ryan",
+      "role": "Lead Technical Recruiter",
+      "text": "My favorite part of working at TaxBit is our culture. We embrace transparency and lead with kindness. We all joke around, laugh, and have fun, all while solving these incredibly complex problems.  TaxBit has the most talented team members that are also so great to be around."
+    },
+    {
+      "name": "Mason",
+      "role": "Software Engineer",
+      "text": "I was job hunting after graduating, and TaxBit reached out. I saw an incredible opportunity to join an early-stage startup and work with brilliant and talented people who make each day a blast!"
+    },
+    {
+      "name": "Tyler",
+      "role": "Customer Support",
+      "text": "TaxBit is not your typical startup. It's a force in an industry that needs leadership and confidence. We're working on the cutting edge of an emerging industry and getting to help shape the landscape of what it means to transact with cryptocurrency. Exciting doesn't do it justice."
+    }
+  ]
+}

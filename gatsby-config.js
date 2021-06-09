@@ -1,7 +1,20 @@
-const path = require(`path`)
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/gatsby-config/
+ */
+const netlifyCmsPaths = {
+  resolve: `gatsby-plugin-netlify-cms-paths`,
+  options: {
+    cmsConfig: `/static/admin/config.yml`,
+  },
+}
 
-const config = require(`./src/utils/siteConfig`)
-const generateRSSFeed = require(`./src/utils/rss/generate-feed`)
+const settings = require("./src/util/site.json")
+
+const font = [
+{ name: "79847239847238", url: "https://i.icomoon.io/public/2993ee0ed2/TaxBit/style.css" },
+]
 
 let ghostConfig
 
@@ -26,166 +39,330 @@ if (process.env.NODE_ENV === `production` && config.siteUrl === `http://localhos
     throw new Error(`siteUrl can't be localhost and needs to be configured in siteConfig. Check the README.`) // eslint-disable-line
 }
 
-/**
-* This is the place where you can tell Gatsby which plugins to use
-* and set them up the way you want.
-*
-* Further info 👉🏼 https://www.gatsbyjs.org/docs/gatsby-config/
-*
-*/
 module.exports = {
-    siteMetadata: {
-        siteUrl: process.env.SITEURL || config.siteUrl,
+  siteMetadata: settings.meta,
+  plugins: [
+    'gatsby-plugin-robots-txt',
+    //"gatsby-plugin-webpack-bundle-analyser-v2",
+
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "UA-118601838-2",
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: "gatsby" },
+        routeChangeEventName: "gatsby-route-change",
+      }
     },
-    plugins: [
-        /**
-         *  Content Plugins
-         */
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: path.join(__dirname, `src`, `pages`),
-                name: `pages`,
-            },
+    {
+    resolve: 'gatsby-source-greenhouse-job-board',
+    options: {
+      boardToken: 'taxbit'
+    },
+  },
+  {
+        resolve: `gatsby-source-ghost`,
+        options:
+            process.env.NODE_ENV === `development`
+                ? ghostConfig.development
+                : ghostConfig.production,
+    },
+    {
+      resolve: "gatsby-source-apiserver",
+      options: {
+        typePrefix: "internal__",
+        method: "get",
+        headers: {
+          "Content-Type": "application/json",
+          "FileType": "json"
         },
-        // Setup for optimised images.
-        // See https://www.gatsbyjs.org/packages/gatsby-image/
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: path.join(__dirname, `src`, `images`),
-                name: `images`,
-            },
+        data: {},
+        params: {
+          apikey: "6hZbvuXWXQKaArVPclG6oLIImabwMWn1",
+          tagValue: "tag"
         },
-        `gatsby-plugin-sharp`,
-        `gatsby-transformer-sharp`,
-        {
-            resolve: `gatsby-source-ghost`,
-            options:
-                process.env.NODE_ENV === `development`
-                    ? ghostConfig.development
-                    : ghostConfig.production,
+        allowCache: false,
+        maxCacheDurationSeconds: 60 * 60 * 24,
+        payloadKey: `body`,
+        localSave: true,
+        path: `${__dirname}/static/assets/`,
+        verboseOutput: true,
+        skipCreateNode: true,
+  
+        entitiesArray: [
+          {
+            url: `https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1/reviews`,
+            name: `reviews`,
+          },
+          {
+            url: `https://api.trustpilot.com/v1/business-units/5e5d8f30d4941700016227e1`,
+            name: `trustpilot`,
+          },
+        ]
+      }
+    },
+    /*{
+      resolve: "gatsby-source-apiserver",
+      options: {
+        typePrefix: "internal__",
+        url: `https://i.icomoon.io/public/2993ee0ed2/TaxBit/style.css`,
+        method: "get",
+        headers: {
+          "Content-Type": "text/plain",
+          "FileType": "css"
         },
-        /**
-         *  Utility Plugins
-         */
-        {
-            resolve: `gatsby-plugin-ghost-manifest`,
-            options: {
-                short_name: config.shortTitle,
-                start_url: `/`,
-                background_color: config.backgroundColor,
-                theme_color: config.themeColor,
-                display: `minimal-ui`,
-                icon: `static/${config.siteIcon}`,
-                legacy: true,
-                query: `
-                {
-                    allGhostSettings {
-                        edges {
-                            node {
-                                title
-                                description
-                            }
-                        }
+        data: {},
+        name: `font`,
+        localSave: true,
+        path: `${__dirname}/static/assets/`,
+        skipCreateNode: true,
+      }
+    },*/
+    /*{
+      resolve: 'gatsby-source-remote-file',
+      options: {
+        // The source url of the remote file
+        url: 'https://jsonplaceholder.typicode.com/todos',
+
+        // OPTIONAL
+        // Provide a name for the created node (default: "remote")
+        name: 'todos',
+
+        // OPTIONAL
+        // The id of the parent node (i.e. the node to which the new remote File node will be linked to.
+        parentNodeId: 'assets',
+        
+        path: `${__dirname}/static/assets/`,
+
+        // OPTIONAL
+        // Adds htaccess authentication to the download request if passed in.
+        auth: { htaccess_user: `USER`, htaccess_pass: `PASSWORD` },
+
+        // OPTIONAL
+        // Adds extra http headers to download request if passed in.
+        httpHeaders: { Authorization: `Bearer someAccessToken` },
+
+        // OPTIONAL
+        // Sets the file extension
+        ext: '.json',
+      },
+    },
+  {
+    resolve: "gatsby-source-remote",
+    opt        files: font,
+    }
+  },
+  {
+      resolve: `gatsby-transformer-remote-filesystem`,
+      options: {
+        // If true, fingerprint the directory instead of the filename
+        // (as `gatsby-transformer-sharp` does).
+        // For example, /static/my_file-1234asdf.pdf will become
+        // /static/1324asdf/my_file.pdf.
+        // Consider the SEO implications if your site is already published.
+        fingerprintDirectory : false,
+
+      }
+    },*/
+   {
+    resolve: 'gatsby-plugin-segment-js',
+    options: {
+      prodKey: '0ZppNXkx9L1ufP09oxft2NdLYStZrUO5',
+      devKey: 'ZEdlifKesq5XeAM6RhDqYe24OCYW9u4x',
+      trackPage: false,
+      delayLoad: true
+    }
+  },
+     /*{
+      resolve: 'gatsby-plugin-zendesk-chat',
+      options: {
+        zendeskKey: 'a2f1dead-39ef-4bd8-84ba-0b5fdef3a5cf',
+        enableDuringDevelop: true,
+      },
+    },*/
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/assets/`,
+        name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/exchanges/`,
+        name: `exchanges`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/`,
+        name: `content`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+        resolve: 'gatsby-plugin-feed-generator',
+        options: {
+        generator: `GatsbyJS`,
+        rss: true,
+        json: false,
+        siteQuery: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            name: 'rss', // This determines the name of your feed file => feed.json & feed.xml
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { template: { eq: "blog-post" } } }
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
                     }
+                  }
                 }
-              `,
-            },
-        },
-        {
-            resolve: `gatsby-plugin-feed`,
-            options: {
-                query: `
-                {
-                    allGhostSettings {
-                        edges {
-                            node {
-                                title
-                                description
-                            }
-                        }
-                    }
+              }
+            `,
+            normalize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return {
+                  title: edge.node.frontmatter.title,
+                  date: edge.node.frontmatter.date,
+                  url: "https://taxbit.com" + edge.node.fields.slug,
+                  html: edge.node.html,
                 }
-              `,
-                feeds: [
-                    generateRSSFeed(config),
-                ],
+              })
             },
-        },
-        /*{
-            resolve: `gatsby-plugin-advanced-sitemap`,
+          },
+        ],
+      }
+    },
+    {
+        resolve: 'gatsby-plugin-feed-generator',
+        options: {
+        generator: `GatsbyJS`,
+        rss: false,
+        json: true,
+        siteQuery: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            name: 'exchanges', // This determines the name of your feed file => feed.json & feed.xml
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { template: { eq: "exchange-page" } } }
+                ) {
+                  edges {
+                    node {
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                        APIinstructions
+                        CSVinstructions
+                        exchangeLogo {
+                          childImageSharp {
+                            fluid(maxWidth: 300) {
+                              src
+                            }
+                          }
+                        }
+
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            normalize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return {
+                  title: edge.node.frontmatter.title,
+                  date: edge.node.frontmatter.date,
+                  url: "https://taxbit.com" + edge.node.fields.slug,
+                  description: [{APIinstructions: edge.node.frontmatter.APIinstructions},{CSVinstructions: edge.node.frontmatter.CSVinstructions}],
+                  image: edge.node.frontmatter.exchangeLogo.childImageSharp.fluid.src,
+                }
+              })
+            },
+          },
+        ],
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+        "gatsby-remark-embed-video",
+          {
+            resolve: `gatsby-remark-relative-images`,
             options: {
-                query: `
-                {
-                    allGhostPost {
-                        edges {
-                            node {
-                                id
-                                slug
-                                updated_at
-                                created_at
-                                feature_image
-                            }
-                        }
-                    }
-                    allGhostPage {
-                        edges {
-                            node {
-                                id
-                                slug
-                                updated_at
-                                created_at
-                                feature_image
-                            }
-                        }
-                    }
-                    allGhostTag {
-                        edges {
-                            node {
-                                id
-                                slug
-                                feature_image
-                            }
-                        }
-                    }
-                    allGhostAuthor {
-                        edges {
-                            node {
-                                id
-                                slug
-                                profile_image
-                            }
-                        }
-                    }
-                }`,
-                mapping: {
-                    allGhostPost: {
-                        sitemap: `posts`,
-                    },
-                    allGhostTag: {
-                        sitemap: `tags`,
-                    },
-                    allGhostAuthor: {
-                        sitemap: `authors`,
-                    },
-                    allGhostPage: {
-                        sitemap: `pages`,
-                    },
-                },
-                exclude: [
-                    `/dev-404-page`,
-                    `/404`,
-                    `/404.html`,
-                    `/offline-plugin-app-shell-fallback`,
-                ],
-                createLinkInHead: true,
-                addUncaughtPages: true,
+              // [Optional] The root of "media_folder" in your config.yml
+              // Defaults to "static"
+              staticFolderName: 'assets',
             },
-        },*/
-        `gatsby-plugin-catch-links`,
-        `gatsby-plugin-react-helmet`,
-        `gatsby-plugin-force-trailing-slashes`,
-        `gatsby-plugin-offline`,
-    ],
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {},
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms`,
+    'gatsby-plugin-sitemap',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `TaxBit`,
+        short_name: `TaxBit`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `static/assets/favicon.png`,
+      },
+    },
+    /*{ 
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        develop: true, 
+        //purgeOnly : ['node_modules/bootstrap'], 
+      }
+    },*/
+    'gatsby-plugin-offline',
+    `gatsby-plugin-netlify`,
+  ],
 }
