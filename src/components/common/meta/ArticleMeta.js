@@ -62,19 +62,20 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
         <>
             <Helmet>
                 <title>{ghostPost.meta_title || ghostPost.title}</title>
-                <meta name="description" content={ghostPost.meta_description || ghostPost.excerpt} />
+                <meta name="description" property="description" content={ghostPost.meta_description || ghostPost.excerpt} />
                 <link rel="canonical" href={canonical} />
 
                 <meta property="og:site_name" content={settings.title} />
-                <meta property="og:type" content="article" />
-                <meta property="og:title"
+                <meta name="type" property="og:type" content="article" />
+                <meta name="title" property="og:title"
                     content={
                         ghostPost.og_title ||
                         ghostPost.meta_title ||
                         ghostPost.title
                     }
                 />
-                <meta property="og:description"
+                <meta name="author" content={author.name}>
+                <meta name="description" property="og:description"
                     content={
                         ghostPost.og_description ||
                         ghostPost.excerpt ||
