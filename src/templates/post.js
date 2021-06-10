@@ -22,6 +22,11 @@ const Post = ({ data, location }) => {
   }
 
   return (
+    <MetaData
+        data={data}
+        location={location}
+        type="article"
+    />
     <Layout className="page">
       <section className="bg-cover">
           <div className="bg-cover-fade"></div>
