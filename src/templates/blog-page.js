@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import PostCard from "../components/post-card2"
 import SEO from "../components/seo"
 import Hero from '../components/Hero'
-import Pagination from '../components/common/pagination'
+import Pagination from '../components/common/Pagination'
 
  
 
