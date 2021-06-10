@@ -22,6 +22,7 @@ const Post = ({ data, location }) => {
   }
 
   return (
+    <>
     <MetaData
         data={data}
         location={location}
@@ -140,6 +141,7 @@ const Post = ({ data, location }) => {
 
 
     </Layout>
+    </>
   )
 }
 
