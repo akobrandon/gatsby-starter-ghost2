@@ -74,7 +74,6 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
                         ghostPost.title
                     }
                 />
-                <meta name="author" content={author.name}>
                 <meta name="description" property="og:description"
                     content={
                         ghostPost.og_description ||
