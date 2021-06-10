@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import Hero from '../components/Hero'
 import Pagination from '../components/common/pagination'
 
-
+ 
 
 
 const BlogIndex = ({ data, location, pageContext }) => {
